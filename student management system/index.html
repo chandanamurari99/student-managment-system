@@ -1,0 +1,27 @@
+
+<html>
+<head>
+    <title>Student Management</title>
+</head>
+<body>
+    <h2>Student Management System</h2>
+
+    Student ID: <input id="id"><br><br>
+    Name: <input id="name"><br><br>
+    Scores: <input id="scores"><br><br>
+    Marks: <input id="marks"><br><br>
+
+    <button onclick="add()">Submit</button>
+    <p id="result"></p>
+
+    <script>
+    function add() {
+        document.getElementById("result").innerHTML =
+        "ID: " + document.getElementById("id").value + "<br>" +
+        "Name: " + document.getElementById("name").value + "<br>" +
+        "Scores: " + document.getElementById("scores").value + "<br>" +
+        "Marks: " + document.getElementById("marks").value;
+    }
+    </script>
+</body>
+</html>
